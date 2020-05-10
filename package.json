@@ -1,0 +1,44 @@
+{
+  "name": "react-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack-dev-server --mode development --open --hot",
+    "build": "node_modules/.bin/webpack --config webpack.prod.js --mode production",
+    "serve": "node_modules/.bin/http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Ibsen/reactprojwithoutcra.git"
+  },
+  "author": "ibsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Ibsen/reactprojwithoutcra/issues"
+  },
+  "homepage": "https://gitlab.com/Ibsen/reactprojwithoutcra#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.12.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
